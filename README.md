@@ -88,12 +88,39 @@ jupyter notebook Caspase4_github.ipynb
 ```
 
 Run cells sequentially. The notebook covers:
-- Loading and processing docking scores
-- Fetching pIC50 values from ChEMBL
-- Generating ChemBERTa embeddings
-- Training the Random Forest classifier and regressor
-- Selecting and analyzing top-10 hits
-- PK-PD simulations and drug-likeness analysis
+
+**Data & Feature Extraction**
+- Loading and processing AutoDock Vina docking scores
+- Extracting DrugBank IDs and molecular descriptors
+- Fetching experimental pIC50 values from ChEMBL
+- Generating ChemBERTa SMILES embeddings
+
+**Machine Learning**
+- Training Random Forest classifier (active vs. inactive compounds)
+- Training Random Forest regressor (pIC50 prediction on actives)
+- Ranking and selecting top-10 candidate compounds
+
+**Model Evaluation Plots**
+- ROC curve (AUC ~0.72)
+- Enrichment curve (top 10% captures ~3.5× more actives than random)
+- Actual vs. predicted pIC50 error plot for top-10 hits
+- t-SNE 2D and 3D chemical space visualization
+- Feature distribution plots (MW, LogP, HBA, HBD, rotatable bonds, aromatic rings) for active vs. inactive compounds
+
+**Drug-likeness & ADMET Analysis**
+- Molecular property table (MW, LogP, HBD, HBA, TPSA, RotBonds)
+- Synthetic Accessibility (SA) score for top-10 hits
+- Drug toxicity flags (structural alerts)
+
+**Pharmacology Plots**
+- Radar plots for individual compound PK profile
+- Radar plots for all 10 compounds (5×2 grid)
+- Simulated dose–response curves for top-10 hits
+- Integrated PK-PD simulations with variable half-lives per compound
+- Dual-axis concentration and effect vs. time plots
+
+**Benchmarking**
+- pIC50 comparison against reference Alzheimer's drugs: Donepezil, Rivastigmine, Galantamine
 
 ---
 
