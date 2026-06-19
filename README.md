@@ -13,19 +13,26 @@ DrugBank compounds
        ↓
 AutoDock Vina (molecular docking)
        ↓
+ChEMBL (fetch experimental pIC50 labels)
+       ↓
 Feature extraction:
   • ChemBERTa SMILES embeddings
   • RDKit physicochemical descriptors
+  • Vina docking scores
        ↓
-Random Forest Classifier (active vs. inactive)
+Random Forest Classifier (active vs. inactive, pIC50 threshold)
        ↓
-Random Forest Regressor (pIC50 prediction)
+Random Forest Regressor (pIC50 prediction on actives)
        ↓
 Top-10 candidate selection
        ↓
-ADMET + SA score + PK-PD simulation
+ADMET + SA score + drug toxicity flags
        ↓
-MD simulation validation
+PK-PD simulations + dose-response curves
+       ↓
+MD simulation validation (RMSD, RMSF, SASA, energy)
+       ↓
+Benchmarking vs. Donepezil, Rivastigmine, Galantamine
 ```
 
 ---
