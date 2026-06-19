@@ -1,0 +1,53 @@
+# Large data files (too large or licensed)
+drugbank.xml
+drugbank.xml.gz
+
+# Virtual environments
+.venv/
+compound/
+
+# Large zip archives
+*.zip
+
+# Docking binary
+vina_1.2.7_mac_aarch64
+
+# Manuscript drafts (private/unpublished)
+*.docx
+*.pptx
+
+# Docking input/output directories
+ligands_pdbqt/
+ligands_sdf/
+docking_out_sdf/
+outputs/
+runs/
+cache_dir/
+
+# MD simulation files (raw data too large)
+caspase4_md/
+Analysis MMPBSA/
+MMPBSA/
+MMPBSAnew/
+Second Research work/
+New graphs/XVGs.zip
+New graphs/XVGs_extracted/
+New graphs/*.xvg
+
+# Receptor/ligand structure files
+*.pdbqt
+protein.pdbqt
+caspase4_receptor.pdbqt
+
+# Old notebook versions
+updated_code_V*.ipynb
+analyze_compounds.ipynb
+transfer_learning 2.ipynb
+
+# macOS
+.DS_Store
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
