@@ -9,7 +9,7 @@ OUT  = "/Users/bhatti.39/Library/CloudStorage/OneDrive-TheOhioStateUniversity/Cu
 
 DRUGS         = ["DB00519", "DB01068", "DB05316", "DB06202", "DB08882"]
 REPLICATES    = ["R1", "R2", "R3"]
-PANEL_LETTERS = ["A", "B", "C", "D", "E"]
+PANEL_LETTERS = ["a", "b", "c", "d", "e"]
 
 # Distinct, well-separated colors (purple/red/blue/green don't visually clash)
 DONEPEZIL_COLOR = "#9467BD"   # purple — reference compound
