@@ -78,15 +78,7 @@ Benchmarking vs. donepezil
     ├── ProtLigDist_triplicates.png
     ├── TotalEnergy_triplicates.png
     ├── plot_all.py
-    ├── plot_rmsd.py
-    └── new plots/                                # Supplementary two-compound MD comparison (8e vs. 8g)
-        ├── 8e/  · 8g/                             # Raw GROMACS .xvg trajectories per compound
-        ├── RMSD_8e_vs_8g.png
-        ├── RMSF_8e_vs_8g.png
-        ├── SASA_8e_vs_8g.png
-        ├── Gyration_8e_vs_8g.png
-        ├── TotalEnergy_8e_vs_8g.png
-        └── plot_8e_vs_8g.py
+    └── plot_rmsd.py
 ```
 
 ---
@@ -192,8 +184,6 @@ Molecular dynamics simulations were performed in triplicate for the top protein�
 | `Gyration_triplicates.png` | Radius of gyration |
 | `ProtLigDist_triplicates.png` | Protein–ligand distance |
 | `TotalEnergy_triplicates.png` | System total energy |
-
-`New graphs/new plots/` additionally contains a supplementary two-compound comparison (labelled 8e vs. 8g), with raw GROMACS `.xvg` trajectories and rendered comparison plots for RMSD, RMSF, SASA, radius of gyration, and total energy.
 
 ---
 
