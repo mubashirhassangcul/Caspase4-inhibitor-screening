@@ -199,7 +199,7 @@ Molecular dynamics simulations were performed in triplicate for the top proteinâ
 
 ## Citation
 
-> Manuscript under review. Citation will be added upon publication.
+> Manuscript is accepted. Citation will be added upon publication.
 
 ---
 
